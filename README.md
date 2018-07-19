@@ -1,6 +1,11 @@
 # meenan-java-toolbox
 A toolbox of random items written in Java. This little project was created to reduce the risk associated with idle hand syndrome. :)
 
+# Technology Stack
+- Java
+- Maven
+- Spring Boot
+
 # Prerequisites:
 - Java 1.8
 - Maven 3.5.4

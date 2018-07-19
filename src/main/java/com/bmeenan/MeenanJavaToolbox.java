@@ -1,10 +1,10 @@
-package com.bpmware;
+package com.bmeenan;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class MeenanJavaToolbox 
 {
     public static void main( String[] args )
     {

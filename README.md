@@ -2,9 +2,10 @@
 A toolbox of random items written in Java. This little project was created to reduce the risk associated with idle hand syndrome. :)
 
 # Technology Stack
-- Java
-- Maven
-- Spring Boot
+- Java (http://www.oracle.com/technetwork/java/javase/overview/index.html)
+- Maven (https://maven.apache.org)
+- Spring Boot (https://spring.io/projects/spring-boot)
+- Logback (https://logback.qos.ch)
 
 # Prerequisites:
 - Java 1.8

@@ -19,7 +19,7 @@ public class RpsServiceTest {
 
 	@Test
 	public void getChoices_returnsAllowableOptionsForGame() {
-		List<String> choices = service.getChoices();
+		List<String> choices = RpsChoices.asListOfStrings();
 		assertNotNull(choices);
 		assertFalse(choices.isEmpty());
 		assertTrue(choices.contains("rock"));
@@ -30,6 +30,6 @@ public class RpsServiceTest {
 	@Test
 	public void shoot_alwaysReturnsAnAllowableValue() {
 		String returnedValue = service.shoot();
-		assertTrue(service.getChoices().contains(returnedValue));
+		assertTrue(RpsChoices.asListOfStrings().contains(returnedValue));
 	}
 }

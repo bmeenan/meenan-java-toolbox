@@ -20,7 +20,7 @@ public class RpsControllerTest {
 	RpsController controller;
 
 	@Test
-	public void shoot_invokesServiceAndReturnsAString() {
+	public void shoot_invokesShooterAndReturnsAString() {
 		when(service.shoot()).thenReturn("paper");
 
 		String rtn = controller.shoot();

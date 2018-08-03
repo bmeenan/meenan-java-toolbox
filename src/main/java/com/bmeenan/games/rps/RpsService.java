@@ -1,26 +1,25 @@
 package com.bmeenan.games.rps;
 
-import java.util.List;
-import java.util.Random;
-
 import javax.validation.ValidationException;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class RpsService {
 
+	@Autowired
+	RpsShooter shooter;
+
 	public String shoot() {
-		Random randomizer = new Random();
-		List<String> choices = RpsChoices.asListOfStrings();
-		return choices.get(randomizer.nextInt(choices.size()));
+		return shooter.shoot();
 	}
 
 	public String play(String playerChoice) {
 		// validate the players choice
 		assertChoice(playerChoice);
 		// have the game pick it's choice
-		String gameChoice = this.shoot();
+		String gameChoice = shooter.shoot();
 		// determine who wins
 		return play(RpsChoices.fromString(playerChoice), RpsChoices.fromString(gameChoice));
 	}
@@ -36,6 +35,12 @@ public class RpsService {
 		/*
 		 * rock beats scissors paper beats rock scissors beats paper
 		 */
+
+		String result = "You threw " + playerChoice.toString() + ". Game threw " + gameChoice.toString() + ". ";
+
+		if (playerChoice.equals(gameChoice)) {
+			return result + "Draw!";
+		}
 
 		boolean playerWins = false;
 
@@ -59,11 +64,10 @@ public class RpsService {
 			break;
 		}
 
-		String result = "You threw " + playerChoice.toString() + ". Game threw " + gameChoice.toString() + ". ";
 		if (playerWins) {
-			result = "Player wins!";
+			result += "Player wins!";
 		} else {
-			result = "Player loses!";
+			result += "Player loses!";
 		}
 		return result;
 	}

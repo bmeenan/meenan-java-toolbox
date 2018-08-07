@@ -23,4 +23,13 @@ public enum RpsChoices {
 		return false;
 	}
 
+	public static RpsChoices fromString(String str) {
+		for (RpsChoices choice : RpsChoices.values()) {
+			if (choice.name().equals(str)) {
+				return choice;
+			}
+		}
+		return null;
+	}
+
 }

@@ -12,15 +12,12 @@ import org.mockito.runners.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class PinnacleTests {
 
-	// https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
-	// https://stackoverflow.com/questions/35246177/find-the-max-difference-pair-in-the-array
-
 	Pinnacle pinnacle = new Pinnacle();
 
 	@Test
 	public void testMaxDifference() {
 		List<Integer> list = new ArrayList<>(Arrays.asList(2, 3, 10, 6, 4, 8, 1));
-		Integer rtn = pinnacle.maxDifference(list);
-		Assert.assertEquals(new Integer(8), rtn);
+		Integer rtn = pinnacle.maxDifferenceOneMore(list);
+		Assert.assertEquals(new Integer(9), rtn);
 	}
 }

@@ -51,5 +51,4 @@ public class ArrayTest {
 		}
 		return max - min;
 	}
-
 }

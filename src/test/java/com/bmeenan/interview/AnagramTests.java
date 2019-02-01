@@ -18,8 +18,23 @@ public class AnagramTests {
 	}
 
 	@Test
+	public void whenWordsNoNotMatchButHaveTheSameNumberOfCharacters_returnsTrue() {
+		assertFalse(anagram.isAnagram("pool", "lake"));
+	}
+
+	@Test
 	public void whenWordsDoNotMatch_returnsFalse() {
 		assertFalse(anagram.isAnagram("pools", "polo"));
+	}
+
+	@Test
+	public void whenOneWordIsEmpty_returnsFalse() {
+		assertFalse(anagram.isAnagram("", "polo"));
+	}
+
+	@Test
+	public void whenBothWordsAreEmptyOrNull_returnsFalse() {
+		assertFalse(anagram.isAnagram("", null));
 	}
 
 }

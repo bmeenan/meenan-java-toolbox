@@ -1,5 +1,6 @@
 package com.bmeenan.dates;
 
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -53,4 +54,9 @@ public class DateTests {
 		Assert.assertNull(dateUtils.getReportEndDate(null));
 	}
 
+	@Test
+	public void formatDateTest() throws ParseException {
+		dateUtils.formatDateWithTimezone("2018-12-13 11:06:23 EST");
+
+	}
 }

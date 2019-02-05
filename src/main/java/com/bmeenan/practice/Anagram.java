@@ -1,4 +1,4 @@
-package com.bmeenan.interview;
+package com.bmeenan.practice;
 
 import java.util.HashMap;
 import java.util.Map;

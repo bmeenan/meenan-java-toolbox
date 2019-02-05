@@ -56,7 +56,9 @@ public class DateTests {
 
 	@Test
 	public void formatDateTest() throws ParseException {
-		dateUtils.formatDateWithTimezone("2018-12-13 11:06:23 EST");
+		dateUtils.formatDateWithTimezoneAndConvertToUTC("2018-12-13 11:06:23 EST");
+		dateUtils.formatDateWithTimezoneAndConvertToUTC("2018-12-13 11:06:23 CST");
+		dateUtils.formatDateWithTimezoneAndConvertToUTC("2018-12-13 11:06:23 MST");
 
 	}
 }

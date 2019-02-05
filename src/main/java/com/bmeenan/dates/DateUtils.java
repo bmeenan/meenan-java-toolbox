@@ -14,9 +14,8 @@ public class DateUtils {
 	 * 
 	 * @throws ParseException
 	 */
-	public Date formatDateWithTimezone(String dateString) throws ParseException {
+	public Date formatDateWithTimezoneAndConvertToUTC(String dateString) throws ParseException {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
-		sdf.setTimeZone(TimeZone.getTimeZone("EST"));
 
 		Date date = sdf.parse(dateString);
 		System.out.println("original date: " + sdf.format(date));

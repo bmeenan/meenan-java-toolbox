@@ -7,12 +7,15 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Problem: https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/java
+ * This is my solution to the Codewars challenge posted here:
+ * 
+ * https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/java
+ * 
  */
 
-public class TwoToOne {
+public class TwoStringsToOne {
 
-	public static String longest(String s1, String s2) {
+	public static String combineStrings(String s1, String s2) {
 
 		Set<Character> characters = new HashSet<>();
 		characters = addStringToSet(s1, characters);

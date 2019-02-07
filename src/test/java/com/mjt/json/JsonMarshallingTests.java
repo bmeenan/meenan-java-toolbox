@@ -22,7 +22,7 @@ public class JsonMarshallingTests {
 	@Test
 	public void pojoToJson() throws JsonProcessingException {
 		// create the object in code
-		SomePojo pojo = new SomePojo();
+		Pojo pojo = new Pojo();
 		pojo.setStringAttribute("string value");
 		pojo.setIntegerAttribute(Integer.valueOf(1310));
 
@@ -42,7 +42,7 @@ public class JsonMarshallingTests {
 	public void jsonToPojo() throws JsonParseException, JsonMappingException, IOException {
 		// serialize
 		ObjectMapper mapper = new ObjectMapper();
-		SomePojo pojo = mapper.readValue(JSON_STRING, SomePojo.class);
+		Pojo pojo = mapper.readValue(JSON_STRING, Pojo.class);
 
 		// assert expected values
 		assertEquals("string value", pojo.getStringAttribute());

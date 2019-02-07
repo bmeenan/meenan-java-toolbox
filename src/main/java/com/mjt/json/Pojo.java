@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @see com.mjt.json.JsonMarshallingTests for examples of how it's used
  */
 
-public class SomePojo {
+public class Pojo {
 
 	@JsonProperty("stringFieldName")
 	private String stringAttribute;

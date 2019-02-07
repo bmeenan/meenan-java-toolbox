@@ -1,4 +1,4 @@
-package com.bmeenan.dates;
+package com.bmeenan.utilities;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

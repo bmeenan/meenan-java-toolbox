@@ -1,4 +1,4 @@
-package com.bmeenan.dates;
+package com.bmeenan.utilities;
 
 import java.text.ParseException;
 import java.util.Calendar;
@@ -8,6 +8,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import com.bmeenan.utilities.DateUtils;
 
 @RunWith(MockitoJUnitRunner.class)
 public class DateTests {

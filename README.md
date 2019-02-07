@@ -7,7 +7,7 @@ A toolbox of random items written in Java. This little project was created to re
 - Spring Boot (https://spring.io/projects/spring-boot)
 - Logback (https://logback.qos.ch)
 
-# Prerequisites:
+# Prerequisites
 - Java 1.8
 - Maven 3.5.4
 
@@ -16,7 +16,7 @@ A toolbox of random items written in Java. This little project was created to re
 - Various code challenges exist in the com.bmeenan.challenge package.
 - Beginning to build out utils in the com.bmeenan.utilities package.
 
-# To build:
+# To build
 - `mvn package`
 
 # To run:

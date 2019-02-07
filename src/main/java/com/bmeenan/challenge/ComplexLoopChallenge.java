@@ -3,10 +3,13 @@ package com.bmeenan.challenge;
 import java.util.Scanner;
 
 /**
- * https://www.hackerrank.com/challenges/java-loops/problem
- *
+ * 
+ * This is my solution to the following challenge from hackerrank.com:
+ * 
+ * - https://www.hackerrank.com/challenges/java-loops/problem
+ * 
  */
-public class ComplexLoop {
+public class ComplexLoopChallenge {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

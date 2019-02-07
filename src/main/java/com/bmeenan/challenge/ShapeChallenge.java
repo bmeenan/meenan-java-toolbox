@@ -1,5 +1,14 @@
 package com.bmeenan.challenge;
 
+/**
+ * This class was written while taking an online challenge from hackerrank.com
+ * as part of a job interview. The challenge asked to you implement three
+ * different implementations of shape (a rectangle, square, and circle), each
+ * with specific behavior.
+ * 
+ * The class is tested by hackerrank.com by comparing your System.out
+ * information with expected output!
+ */
 interface Shape {
 	float getArea();
 
@@ -8,7 +17,7 @@ interface Shape {
 	String toString();
 }
 
-public class ShapeTest {
+public class ShapeChallenge {
 
 	class Rectangle implements Shape {
 

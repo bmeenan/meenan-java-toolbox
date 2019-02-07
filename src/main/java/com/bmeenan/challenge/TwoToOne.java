@@ -1,4 +1,4 @@
-package com.bmeenan.practice;
+package com.bmeenan.challenge;
 
 import java.util.ArrayList;
 import java.util.Collections;

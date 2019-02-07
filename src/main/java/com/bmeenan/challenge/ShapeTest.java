@@ -1,4 +1,4 @@
-package com.bmeenan.practice;
+package com.bmeenan.challenge;
 
 interface Shape {
 	float getArea();

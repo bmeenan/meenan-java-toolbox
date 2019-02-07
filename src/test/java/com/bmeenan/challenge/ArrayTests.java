@@ -1,4 +1,4 @@
-package com.bmeenan.practice;
+package com.bmeenan.challenge;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.bmeenan.practice.ArrayTest;
+import com.bmeenan.challenge.ArrayTest;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ArrayTests {

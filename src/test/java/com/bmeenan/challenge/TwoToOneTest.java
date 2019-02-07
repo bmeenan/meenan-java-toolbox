@@ -1,4 +1,4 @@
-package com.bmeenan.practice;
+package com.bmeenan.challenge;
 
 import static org.junit.Assert.assertEquals;
 

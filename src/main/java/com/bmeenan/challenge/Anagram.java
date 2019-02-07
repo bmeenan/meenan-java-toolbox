@@ -19,7 +19,7 @@ import org.springframework.util.StringUtils;
  * attempt and later replaced with isAnagramByMapping to address performance
  * concerns.
  * 
- * See AnagramTests in this project for test code.
+ * See com.bmeenan.challenge.AnagramTests in this project for unit testing.
  * 
  */
 public class Anagram {

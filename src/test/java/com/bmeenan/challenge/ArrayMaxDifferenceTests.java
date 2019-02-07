@@ -9,12 +9,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.bmeenan.challenge.ArrayTest;
-
 @RunWith(MockitoJUnitRunner.class)
-public class ArrayTests {
+public class ArrayMaxDifferenceTests {
 
-	ArrayTest test = new ArrayTest();
+	ArrayMaxDifference test = new ArrayMaxDifference();
 
 	@Test
 	public void testMaxDifference() {

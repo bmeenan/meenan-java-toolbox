@@ -1,9 +1,15 @@
 package com.bmeenan.challenge;
 
-import java.util.Collections;
 import java.util.List;
 
-public class ArrayTest {
+/**
+ * Another challenge given to me in an online test for a position development
+ * job. Write a method that returns the greatest possible difference between
+ * each element in an array and it's brethren to the left
+ * 
+ * @see com.bmeenan.challenge.ArrayMaxDifferenceTests for unit tests
+ */
+public class ArrayMaxDifference {
 
 	public Integer maxDifference(List<Integer> list) {
 
@@ -18,8 +24,7 @@ public class ArrayTest {
 		for (int i = 0; i < numberList.length; i++) {
 			currentNumber = numberList[i];
 			System.out.println("Current number: " + currentNumber);
-			// loop to the left and when the left item is smaller than the current number,
-			// calculate the difference
+			// loop to the left and when the is smaller, calculate the difference
 			for (int j = i - 1; j >= 0; j--) {
 				currentLeft = numberList[j];
 				System.out.println("number to the left: " + currentLeft);
@@ -32,23 +37,4 @@ public class ArrayTest {
 		return maxDifference;
 	}
 
-	public Integer maxDifferenceUsingCollections(List<Integer> list) {
-		return Collections.max(list) - Collections.min(list);
-	}
-
-	public Integer maxDifferenceBySorting(List<Integer> list) {
-		Collections.sort(list);
-		return list.get(list.size() - 1) - list.get(0);
-	}
-
-	public Integer maxDifferenceManually(List<Integer> list) {
-		Integer min = Integer.MAX_VALUE;
-		Integer max = Integer.MIN_VALUE;
-
-		for (Integer currentNumber : list) {
-			min = Math.min(min, currentNumber);
-			max = Math.max(max, currentNumber);
-		}
-		return max - min;
-	}
 }

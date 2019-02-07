@@ -26,7 +26,7 @@ public class Anagram {
 
 	public boolean isAnagram(String wordOne, String wordTwo) {
 
-		// if either are empty (null or "", return false)
+		// if either are empty (null or "", throw an exception)
 		if (StringUtils.isEmpty(wordOne) || StringUtils.isEmpty(wordTwo)) {
 			throw new IllegalArgumentException("Both parameters must be valued and not blank.");
 		}

@@ -7,8 +7,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.bmeenan.challenge.Anagram;
-
 @RunWith(MockitoJUnitRunner.class)
 public class AnagramTests {
 
@@ -20,7 +18,7 @@ public class AnagramTests {
 	}
 
 	@Test
-	public void whenWordsNoNotMatchButHaveTheSameNumberOfCharacters_returnsTrue() {
+	public void whenWordsNoNotMatchButHaveTheSameNumberOfCharacters_returnsFalse() {
 		assertFalse(anagram.isAnagram("pool", "lake"));
 	}
 

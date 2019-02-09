@@ -11,6 +11,8 @@
   
   <properties>
     <java.version>1.8</java.version>
+    <apacheds.version>1.5.5</apacheds.version>
+    <shared-ldap.version>0.9.15</shared-ldap.version>
   </properties>
     
   <parent>
@@ -48,6 +50,14 @@
     	<groupId>com.fasterxml.jackson.core</groupId>
     	<artifactId>jackson-core</artifactId>
 	</dependency>
+	<dependency>
+    	<groupId>org.springframework.ldap</groupId>
+    	<artifactId>spring-ldap-core</artifactId>
+	</dependency>
+    <dependency>
+		<groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-ldap</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>org.mockito</groupId>
@@ -60,6 +70,55 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
+  
+    <dependency>
+        <groupId>org.springframework.ldap</groupId>
+        <artifactId>spring-ldap-test</artifactId>
+        <scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <artifactId>commons-logging</artifactId>
+                <groupId>commons-logging</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    
+     <dependency>
+         <groupId>org.apache.directory.server</groupId>
+         <artifactId>apacheds-core</artifactId>
+         <version>${apacheds.version}</version>
+         <scope>test</scope>
+     </dependency>
+     <dependency>
+         <groupId>org.apache.directory.server</groupId>
+         <artifactId>apacheds-core-entry</artifactId>
+         <version>${apacheds.version}</version>
+         <scope>test</scope>
+     </dependency>
+     <dependency>
+         <groupId>org.apache.directory.server</groupId>
+         <artifactId>apacheds-protocol-shared</artifactId>
+         <version>${apacheds.version}</version>
+         <scope>test</scope>
+     </dependency>
+     <dependency>
+         <groupId>org.apache.directory.server</groupId>
+         <artifactId>apacheds-protocol-ldap</artifactId>
+         <version>${apacheds.version}</version>
+         <scope>test</scope>
+     </dependency>
+     <dependency>
+         <groupId>org.apache.directory.server</groupId>
+         <artifactId>apacheds-server-jndi</artifactId>
+         <version>${apacheds.version}</version>
+         <scope>test</scope>
+     </dependency>
+     <dependency>
+         <groupId>org.apache.directory.shared</groupId>
+         <artifactId>shared-ldap</artifactId>
+         <version>${shared-ldap.version}</version>
+         <scope>test</scope>
+     </dependency>
   </dependencies>
 
   <build>
@@ -70,5 +129,5 @@
       </plugin>
     </plugins>
   </build>
-      
+        
 </project>

@@ -1,4 +1,4 @@
-package com.mjt.spring.boot;
+package com.mjt.controller;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.mjt.spring.boot.WebController;
+import com.mjt.controller.WebController;
 
 @RunWith(MockitoJUnitRunner.class)
 public class WebControllerTest {

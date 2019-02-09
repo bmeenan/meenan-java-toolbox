@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * This is a plain old java object used to demonstrate Jackson's FasterXML
  * serializing and de-serializing capabilities.
  * 
- * @see com.mjt.json.JsonMarshallingTests for examples of how it's used
+ * @see com.mjt.json.JsonMarshallingTest for examples of how it's used
  */
 
 public class Pojo {

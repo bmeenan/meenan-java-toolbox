@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import com.mjt.challenge.TwoStringsToOne;
 
-public class TwoStringsToOneTests {
+public class TwoStringsToOneTest {
 
 	@Test
 	public void test() {

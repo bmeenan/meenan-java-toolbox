@@ -7,7 +7,7 @@ import java.util.List;
  * job. Write a method that returns the greatest possible difference between
  * each element in an array and it's brethren to the left
  * 
- * @see com.mjt.challenge.ArrayMaxDifferenceTests for unit tests
+ * @see com.mjt.challenge.ArrayMaxDifferenceTest for unit tests
  */
 public class ArrayMaxDifference {
 

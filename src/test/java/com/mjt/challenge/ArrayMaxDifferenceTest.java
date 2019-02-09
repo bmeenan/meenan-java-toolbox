@@ -12,7 +12,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import com.mjt.challenge.ArrayMaxDifference;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ArrayMaxDifferenceTests {
+public class ArrayMaxDifferenceTest {
 
 	ArrayMaxDifference test = new ArrayMaxDifference();
 

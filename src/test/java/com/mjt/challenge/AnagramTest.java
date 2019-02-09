@@ -10,7 +10,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import com.mjt.challenge.Anagram;
 
 @RunWith(MockitoJUnitRunner.class)
-public class AnagramTests {
+public class AnagramTest {
 
 	Anagram anagram = new Anagram();
 

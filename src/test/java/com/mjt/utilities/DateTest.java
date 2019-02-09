@@ -12,7 +12,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import com.mjt.utilities.DateUtils;
 
 @RunWith(MockitoJUnitRunner.class)
-public class DateTests {
+public class DateTest {
 
 	DateUtils dateUtils = new DateUtils();
 

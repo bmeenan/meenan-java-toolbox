@@ -1,6 +1,10 @@
 # meenan-java-toolbox
 A toolbox of random items written in Java. This little project was created to reduce the risk associated with idle hand syndrome. :)
 
+# Credit Where Credit Is Due
+- A lot of the samples I used, especially for LDAP, are [Baeldung](https://www.baeldung.com), a fantastic resource for Java and Spring-related information and tutorials.   
+
+
 # Technology Stack
 - Java (http://www.oracle.com/technetwork/java/javase/overview/index.html)
 - Maven (https://maven.apache.org)

@@ -15,7 +15,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RunWith(MockitoJUnitRunner.class)
-public class JsonMarshallingTests {
+public class JsonMarshallingTest {
 
 	String JSON_STRING = "{\"stringFieldName\":\"string value\",\"integerFieldName\":1310,\"dateFieldName\":1546300800}";
 

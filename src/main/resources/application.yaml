@@ -1,0 +1,17 @@
+ldap:
+  partitionSuffix: dc=example,dc=com
+  partition: example
+  principal: uid=admin,ou=system
+  password: secret
+  portL: 18889
+  url: ldap://localhost:18889
+  
+  
+map-of-objects:
+   some-key:
+      string-property:
+      map-property:
+         another-key:
+            string-property-one: string-property-one-value
+            string-property-two: string-property-two-value
+            string-property-three: string-property-three-value

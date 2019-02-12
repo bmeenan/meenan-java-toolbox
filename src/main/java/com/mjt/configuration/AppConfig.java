@@ -14,7 +14,7 @@ import org.springframework.ldap.core.support.LdapContextSource;
 import com.mjt.ldap.LdapClient;
 
 @Configuration
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:application.yaml")
 @ComponentScan(basePackages = { "com.mjt.*" })
 @Profile("default")
 @EnableLdapRepositories(basePackages = "com.mjt.**")
